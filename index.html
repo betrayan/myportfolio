@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Betrayan M | Innovative Developer</title>
+  <link rel="website icon" type="ico" href="dclogo.ico">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Portfolio of Betrayan M, an innovative Full Stack Developer and AI specialist. expert in Python, Java, and building immersive web experiences.">
+  <meta name="keywords"
+    content="Betrayan M, Full Stack Developer, AI Developer, Web Design, JavaScript, Python, Portfolio, Vibe Coding">
+  <meta name="author" content="Betrayan M">
+
+  <!-- Open Graph / Facebook / WhatsApp Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://betrayan-portfolio.vercel.app/">
+  <meta property="og:title" content="Betrayan M | Architecting the Digital Future">
+  <meta property="og:description"
+    content="Explore the digital realm of Betrayan M - Featuring advanced AI projects, 3D web interactions, and modern UI/UX design.">
+  <meta property="og:image" content="https://i.imgur.com/your-preview-image.png">
+  <!-- Replace with your actual portfolio screenshot URL -->
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://betrayan-portfolio.vercel.app/">
+  <meta property="twitter:title" content="Betrayan M | Innovative Developer">
+  <meta property="twitter:description"
+    content="Full Stack Developer & AI Enthusiast. Check out my latest projects and resume.">
+  <meta property="twitter:image" content="https://i.imgur.com/your-preview-image.png">
+
+  <!-- Fonts: Outfit & Plus Jakarta Sans & Orbitron (for gaming) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Gaming Theme Styles -->
+  <link rel="stylesheet" href="gaming.css">
+</head>
+
+<body>
+
+  <!-- Custom Cursor Elements -->
+  <div class="cursor-dot" data-cursor-dot></div>
+  <div class="cursor-outline" data-cursor-outline></div>
+
+  <!-- Interactive Particle Background -->
+  <canvas id="bg-canvas" style="position:fixed; top:0; left:0; width:100%; height:100%; z-index:-1;"></canvas>
+
+  <nav>
+    <div class="logo"><i class="fa-solid fa-code"></i> <span class="hacker-text" data-value="DOCODE">DOCODE</span></div>
+    <ul>
+      <li><a href="#home"><i class="fa-solid fa-house"></i> <span>Home</span></a></li>
+      <li><a href="#about"><i class="fa-solid fa-user"></i> <span>About</span></a></li>
+      <li><a href="#skills"><i class="fa-solid fa-wand-magic-sparkles"></i> <span>Skills</span></a></li>
+      <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i> <span>Education</span></a></li>
+
+      <li><a href="#projects"><i class="fa-solid fa-layer-group"></i> <span>Works</span></a></li>
+      <li><a href="#blog"><i class="fa-solid fa-newspaper"></i> <span>Blog</span></a></li>
+
+      <li><a href="#contact"><i class="fa-solid fa-envelope"></i> <span>Contact</span></a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="container">
+    <div class="hero-content">
+      <div class="hero-badge">👋 Hi, I'm Betrayan M</div>
+      <h1>Architecting the <br> <span class="glitch-text" data-text="Digital Future">Digital Future</span></h1>
+      <p style="margin: 20px 0 30px 0;">Transforming ideas into powerful, AI-driven web experiences. I build scalable
+        applications with a focus on polished UI and robust backend logic.</p>
+      <div style="display:flex; gap:15px; margin-top:30px; justify-content: inherit;">
+        <a href="#projects" class="btn btn-primary">See My Work <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="BETRAYAN%20M%20(2).pdf" target="_blank" class="btn btn-secondary">View Resume <i
+            class="fa-solid fa-file-export"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <!-- CSS Animation Based 'Image' (Floating Gaming Laptop) -->
+      <div class="laptop-container">
+        <div class="laptop-screen"></div>
+        <div class="laptop-base"></div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="about" class="container hidden-init">
+    <h2>About <span>Me</span></h2>
+    <div class="about-grid">
+      <div class="card">
+        <h3>My Story</h3>
+        <p style="margin-top:10px">I'm a passionate developer who believes in the power of code to solve real-world
+          problems. My journey started with simple scripts and has evolved into building complex AI-driven ecosystems. I
+          thrive on challenges and continuous learning.</p>
+      </div>
+      <div class="card">
+        <h3>My Philosophy</h3>
+        <p style="margin-top:10px">"From 0 to 1, then 1 to 100."</p>
+        <p style="margin-top:10px">I focus on laying strong foundations (0 to 1) and then scaling them to perfection (1
+          to 100). Whether it's optimization, accessibility, or clean architecture, I never settle for "good enough".
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="container hidden-init">
+    <h2>My <span>Tech Stack</span></h2>
+    <div class="skills-grid">
+      <!-- HTML, CSS, JS -->
+      <div class="card">
+        <div class="skill-icon">
+          <i class="fa-brands fa-html5" style="margin-right:10px;"></i>
+          <i class="fa-brands fa-css3-alt" style="margin-right:10px;"></i>
+          <i class="fa-brands fa-js"></i>
+        </div>
+        <h3>Web Technologies</h3>
+        <p>Mastery of the core trio: HTML5, CSS3, and JavaScript for building structured, styled, and interactive web
+          experiences.</p>
+      </div>
+
+      <!-- Vibe Coding -->
+      <div class="card">
+        <div class="skill-icon"><i class="fa-solid fa-bolt"></i></div>
+        <h3>Vibe Coding</h3>
+        <p>Coding with rhythm and flow. High-velocity development driven by deep focus and intuitive problem solving.
+        </p>
+      </div>
+
+      <!-- Core Java -->
+      <div class="card">
+        <div class="skill-icon"><i class="fa-brands fa-java"></i></div>
+        <h3>Core Java</h3>
+        <p>Strong command of OOP principles, collections framework, and multithreading for robust software solutions.
+        </p>
+      </div>
+
+      <!-- Intermediate Python -->
+      <div class="card">
+        <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+        <h3>Intermediate Python</h3>
+        <p> proficient in scripting, data manipulation, and building logic for AI/ML foundations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="container hidden-init">
+    <h2>My <span>Education</span></h2>
+    <div class="timeline">
+      <!-- B.E. -->
+      <div class="timeline-item">
+        <h3>B.E. Computer Science & Engineering</h3>
+        <p class="text-muted">AVS Engineering College, Salem | 2022 - 2026</p>
+        <p style="margin-top:10px">Current CGPA:7.8/10.Specializing in Artificial Intelligence and Full Stack
+          Development. </p>
+      </div>
+      <!-- HSC -->
+      <div class="timeline-item">
+        <h3>Higher Secondary (HSC)</h3>
+        <p class="text-muted">State Board, Tamil Nadu | 2020 - 2022</p>
+        <p style="margin-top:10px">percentage: 61%. Major subjects: Physics, Chemistry, Maths, Computer
+          Science.</p>
+      </div>
+      <!-- SSLC -->
+      <div class="timeline-item">
+        <h3>Secondary School (SSLC)</h3>
+        <p class="text-muted">State Board, Tamil Nadu | 2020</p>
+        <p style="margin-top:10px">percentage: 76%. Achieved 90% proficiency in core subjects.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements" class="container hidden-init">
+    <h2>Honors & <span>Achievements</span></h2>
+    <div class="about-grid">
+
+      <!-- Smart India Hackathon -->
+      <div class="card">
+        <div class="skill-icon" style="border-radius:50%; width:80px; height:80px; margin-bottom:20px;">
+          <i class="fa-solid fa-trophy"></i>
+        </div>
+        <h3>National Finalist</h3>
+        <p class="text-muted"><strong>Smart India Hackathon 2024</strong></p>
+        <p style="margin-top:10px">Selected among top teams nationwide for developing an innovative resource management
+          solution.</p>
+      </div>
+
+      <!-- CodeVolts Hackathon -->
+      <div class="card">
+        <div class="skill-icon" style="border-radius:50%; width:80px; height:80px; margin-bottom:20px;">
+          <i class="fa-solid fa-trophy"></i>
+        </div>
+        <h3>Finalist</h3>
+        <p class="text-muted"><strong>CodeVolts Hackathon</strong></p>
+        <p style="margin-top:10px">Secured a finalist position at the CodeVolts Hackathon held at VIT Chennai.</p>
+      </div>
+
+      <!-- KPR Hackathon -->
+      <div class="card">
+        <div class="skill-icon" style="border-radius:50%; width:80px; height:80px; margin-bottom:20px;">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <h3>Hackathon Participant</h3>
+        <p class="text-muted"><strong>KPR Institute, Coimbatore</strong></p>
+        <p style="margin-top:10px">Actively participated and presented innovative solutions at the KPR College
+          Hackathon.</p>
+      </div>
+
+      <!-- Symposiums -->
+      <div class="card">
+        <div class="skill-icon" style="border-radius:50%; width:80px; height:80px; margin-bottom:20px;">
+          <i class="fa-solid fa-certificate"></i>
+        </div>
+        <h3>Symposium Enthusiast</h3>
+        <p class="text-muted"><strong>Technical Events</strong></p>
+        <p style="margin-top:10px">Attended and participated in numerous technical symposiums across various colleges.
+        </p>
+      </div>
+
+      <!-- Event Organizing -->
+      <div class="card">
+        <div class="skill-icon" style="border-radius:50%; width:80px; height:80px; margin-bottom:20px;">
+          <i class="fa-solid fa-users-gear"></i>
+        </div>
+        <h3>Event Organizer</h3>
+        <p class="text-muted"><strong>Campus Leadership</strong></p>
+        <p style="margin-top:10px">Lead organizer for multiple college events, coordinating logistics and managing teams
+          effectively.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Recent <span>Innovations</span></h2>
+    <div class="project-grid">
+
+      <!-- JarvisMK15 -->
+      <div class="card">
+        <div class="project-vis">
+          <i class="fa-solid fa-robot"></i>
+        </div>
+        <h3>JarvisMK15</h3>
+        <p>Advanced AI ecosystem for voice interaction and system control. Features intelligent scheduling and natural
+          language processing.</p>
+      </div>
+
+      <!-- EDHUB -->
+      <div class="card">
+        <div class="project-vis">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <h3>EDHUB</h3>
+        <p>Educational platform connecting students and mentors with real-time collaboration tools and resource sharing.
+        </p>
+      </div>
+
+      <!-- FoodyGro -->
+      <div class="card">
+        <div class="project-vis">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </div>
+        <h3>FoodyGro</h3>
+        <p>Hyper-local delivery app integrating food and grocery services with live order tracking and logistics.</p>
+      </div>
+
+      <!-- Viswas -->
+      <div class="card">
+        <div class="project-vis">
+          <i class="fa-solid fa-handshake"></i>
+        </div>
+        <h3>Viswas</h3>
+        <p>A smart contract farming platform bridging farmers and buyers. Features secure digital agreements and harvest
+          tracking.</p>
+      </div>
+
+      <!-- Jarvis Offline -->
+      <div class="card">
+        <div class="project-vis">
+          <i class="fa-solid fa-microchip"></i>
+        </div>
+        <h3>Jarvis Offline</h3>
+        <p>Standalone local AI assistant designed for privacy and speed. Executes system commands and automation without
+          internet.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="blog" class="container">
+    <h2>Latest <span>Insights</span></h2>
+    <div class="blog-grid">
+      <div class="card blog-card">
+
+        <h3>The Future of AI in Web Development</h3>
+        <p>Exploring how LLMs and generative agents are reshaping the way we edit and write code.</p>
+      </div>
+      <div class="card blog-card">
+
+        <h3>Mastering CSS Grid Layouts</h3>
+        <p>A deep dive into building responsive bento-grids without using heavy frameworks.</p>
+      </div>
+      <div class="card blog-card">
+
+        <h3>Why Clean Architecture Matters</h3>
+        <p>Maintaining scalability in Python applications through proper modularization.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container hidden-init">
+    <div class="card contact-wrapper">
+      <h2>Let's <span>Talk Code</span></h2>
+      <p style="margin-bottom: 30px">Ready to start a project? Send me a message.</p>
+      <!-- Added IDs for JS to hook into -->
+      <form id="contact-form">
+        <input type="text" id="user_name" name="user_name" placeholder="Your Name" required>
+        <input type="email" id="user_email" name="user_email" placeholder="Your Email" required>
+        <textarea id="message" name="message" rows="5" placeholder="Your Project Details..." required></textarea>
+        <button type="submit" class="btn btn-primary" style="width:100%"><i class="fa-brands fa-whatsapp"></i> Send via
+          WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- Footer -->
+  <footer
+    style="text-align:left; padding: 30px 0; background: #000; border-top: 1px solid #1a1a1a; position: relative; z-index: 10;">
+    <div class="container"
+      style="display: flex; justify-content: space-between; align-items: flex-start; max-width: 900px; flex-wrap: wrap; gap: 20px;">
+
+      <div class="footer-left" style="max-width: 60%;">
+        <h4 style="color: #fff; margin-bottom: 10px; font-size: 1rem;">Thank you for visiting!</h4>
+        <p id="dynamic-quote"
+          style="font-size: 0.9rem; color: var(--primary); font-style: italic; margin-bottom: 15px; min-height: 40px;">
+          "Code never lies, comments sometimes do."</p>
+        <p style="font-size: 0.8rem; color: #555; margin: 0;">&copy; 2026 Betrayan M.</p>
+      </div>
+
+      <div class="social-links" style="display: flex; gap: 15px; font-size: 1.3rem; align-items: center;">
+        <a href="https://github.com/betrayan" target="_blank" style="color: #666; transition: 0.3s;"><i
+            class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/betrayan-m-090598322" target="_blank"
+          style="color: #666; transition: 0.3s;"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#contact" style="color: #666; transition: 0.3s;"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Thruster (Back to Top) Button -->
+  <button id="thruster-btn" title="Ignite Thrusters"><i class="fa-solid fa-rocket"></i></button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
