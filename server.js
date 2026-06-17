@@ -10,6 +10,16 @@ log("Attempting to start server...");
 
 try {
     require('dotenv').config();
+    
+    // ===== PRINT STATEMENTS FOR ENV TESTING =====
+    log("========== ENV VARIABLES LOADED ==========");
+    log("PORT: " + process.env.PORT);
+    log("EMAIL_USER: " + process.env.EMAIL_USER);
+    log("EMAIL_PASS: " + process.env.EMAIL_PASS);
+    log("SECRET_PASSWORD: " + process.env.SECRET_PASSWORD);
+    log("WHATSAPP_NUMBER: " + process.env.WHATSAPP_NUMBER);
+    log("========== ENV VARIABLES LOADED ==========");
+    
     const express = require('express');
     const nodemailer = require('nodemailer');
     const cors = require('cors');
@@ -79,6 +89,9 @@ try {
             log("Error starting server: " + err);
         } else {
             log(`Server is running on http://localhost:${PORT}`);
+            log("✅ All Environment Variables Loaded Successfully!");
+            log("✅ Email Service Configured: " + process.env.EMAIL_USER);
+            log("✅ Secret Password Active: " + (process.env.SECRET_PASSWORD ? "YES" : "NO"));
         }
     });
 

@@ -5,11 +5,30 @@ on:
 jobs:
     build:
         runs-on: ubuntu-latest
+        
+        env:
+            PORT: 3000
+            EMAIL_USER: ${{ secrets.EMAIL_USER }}
+            EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+            SECRET_PASSWORD: ${{ secrets.SECRET_PASSWORD }}
+            WHATSAPP_NUMBER: ${{ secrets.WHATSAPP_NUMBER }}
 
         steps:
             - uses: actions/checkout@v4
+            
+            - name: Print Environment Variables
+              run: |
+                echo "========== ENV VARIABLES LOADED =========="
+                echo "PORT: ${{ env.PORT }}"
+                echo "EMAIL_USER: ${{ env.EMAIL_USER }}"
+                echo "EMAIL_PASS: ${{ env.EMAIL_PASS }}"
+                echo "SECRET_PASSWORD: ${{ env.SECRET_PASSWORD }}"
+                echo "WHATSAPP_NUMBER: ${{ env.WHATSAPP_NUMBER }}"
+                echo "========== ENV VARIABLES LOADED =========="
+            
             - name: Run a one-line script
               run: echo Hello, world!
+            
             - name: Run a multi-line script
               run: |
                 echo Add other actions to build,
